@@ -2,11 +2,13 @@
 
 
 {% block content %}
-<div>
-    <h1>Projects</h1>
-    {% for project in projects  %}
-        <li>{{project.name}}</li>
-    {% endfor %}
-</div>
+<h1>Projects</h1>
+{% for project in projects  %}
+<article class="card">
+    <a href="">
+        <h1>{{project.name}}</h1>
+    </a>
+</article>
+{% endfor %}
 {% endblock content %}
     
