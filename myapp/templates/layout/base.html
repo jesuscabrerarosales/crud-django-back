@@ -4,19 +4,19 @@
             <a href="/"> HOME</a>
         </li>
         <li>
-            <a href="/about">ABOUT</a>
+            <a href="{% url 'about' %}">ABOUT</a>
         </li>
         <li>
-            <a href="/projects">PROJECTS</a>
+            <a href="{% url 'projects' %}">PROJECTS</a>
         </li>
         <li>
-            <a href="/create_project">CREATE PROJECTS</a>
+            <a href="{% url 'create_project' %}">CREATE PROJECTS</a>
         </li>
         <li>
-            <a href="/tasks">TASKS</a>
+            <a href="{% url 'tasks' %}">TASKS</a>
         </li>
         <li>
-            <a href="/create_task">CREATE TASKS</a>
+            <a href="{% url 'create_task' %}">CREATE TASKS</a>
         </li>
     </ul>
 </nav>

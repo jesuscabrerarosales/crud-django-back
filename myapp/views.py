@@ -39,7 +39,7 @@ def create_task(request):
         })
     else:
         Task.objects.create(title = request.POST['title'], description = request.POST['description'], project_id=2)
-        return redirect('/tasks/')
+        return redirect('tasks')
     
 def create_project(request):
     if request.method=='GET':
@@ -48,4 +48,4 @@ def create_project(request):
         })
     else:
         Project.objects.create(name = request.POST['name'])
-        return redirect('/projects/')
+        return redirect('projects')
