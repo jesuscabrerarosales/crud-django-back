@@ -1,10 +1,11 @@
 {% extends 'layout/base.html' %}
 
 
-
+{% load static %}
 
 {% block content %}
 <h1>Welcome to Django App, this is the first test </h1>
+<img src="{% static 'j.jpg' %}" alt="" width="80">
 <h2>{{title}}</h2>
 {% lorem 8 b random %}
 {% endblock content %}
