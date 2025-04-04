@@ -1,20 +1,24 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
 <div>
-    <h1>Task</h1>
-    {% for task in tasks %}
-        <h3>{{ task.title }} </h3>
-        
-        {% if task.done == False %}
-        <p>Tarea pendiente</p>
-        {% else %}
-        <p>{{ task.description }}</p>
-        {% endif %}
-        <span>Project; {{ task.project.name }}</span>
-        <button>
-            Delete
-        </button>
-        <button>
-            Done
-        </button>
-    {% endfor %}
+<h1>Task</h1>
+{% for task in tasks %}
+    <h3>{{ task.title }} </h3>
+    
+    {% if task.done == False %}
+    <p>Tarea pendiente</p>
+    {% else %}
+    <p>{{ task.description }}</p>
+    {% endif %}
+    <span>Project; {{ task.project.name }}</span>
+    <button>
+        Delete
+    </button>
+    <button>
+        Done
+    </button>
+{% endfor %}
 </div>
+{% endblock content %}
     
