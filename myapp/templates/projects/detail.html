@@ -2,7 +2,15 @@
 
 
 {% block content %}
-<h1>Project details!!</h1>
-<p>{{ project }}</p>
+<h1>Project details!! - project</h1>
+
+
+{% for task in tasks %}
+    <div>
+        <p class="card">{{task.title}}</p>
+    </div>
+{% endfor %}
+    
+
 {% endblock content %}
     
