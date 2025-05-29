@@ -25,11 +25,8 @@ This project serves as a tutorial and practice for building RESTful APIs using D
 
 ## ⚙️ Setup Instructions
 
-1. Clone the repository:  
-   ```
-   git clone https://github.com/yourusername/django-crud-back.git
-   cd django-crud-back
-   ```
+1. Clone the repository
+   
 2. Create and activate a virtual environment (recommended): 
    ```
     python3 -m venv env
