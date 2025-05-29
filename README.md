@@ -15,7 +15,6 @@ This project serves as a tutorial and practice for building RESTful APIs using D
 
 - Python 3.x  
 - Django  
-- Django REST Framework  
 
 ## 📦 Features
 
